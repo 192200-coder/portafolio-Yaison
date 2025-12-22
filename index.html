@@ -3,67 +3,812 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Yaison Hernández</title>
+    <title>Portfolio - Alejandro Martínez</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/inicio.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
 </head>
 <body>
-    <header>
-        <nav class="nav-container">
-            <a href="#inicio" class="logo">Portfolio YH</a>
-            <button class="menu-toggle" aria-label="Menú">
-                <i class="fas fa-bars"></i>
-            </button>
-            <ul class="nav-menu">
-                <li><a href="#inicio"><i class="fas fa-home"></i> Inicio</a></li>
-                <li><a href="#sobre-mi"><i class="fas fa-user"></i> Sobre Mí</a></li>
-                <li><a href="#proyectos"><i class="fas fa-code"></i> Proyectos</a></li>
-                <li><a href="#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
-            </ul>
+    <!-- Scroll Progress -->
+    <div class="scroll-progress">
+        <div class="scroll-bar"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#inicio" class="nav-logo">&lt;Portfolio /&gt;</a>
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#inicio" class="nav-link active">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#sobre-mi" class="nav-link">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#habilidades" class="nav-link">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#proyectos" class="nav-link">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contacto" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+                
+                <!-- Close button -->
+                <div class="nav-close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <!-- Toggle button -->
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
         </nav>
     </header>
 
-    <main>
-        <section id="inicio">
-            <div class="inicio-container">
-                <div class="inicio-content">
-                    <h1>Yaison Hernández</h1>
-                    <p class="titulo">Desarrollador Full Stack</p>
-                    <p class="descripcion">
-                        Apasionado por la tecnología y el desarrollo web. 
-                        Me especializo en crear soluciones digitales innovadoras 
-                        y eficientes que resuelven problemas reales.
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero section" id="inicio">
+            <div class="hero-container container grid">
+                <div class="hero-content">
+                    <span class="hero-badge">
+                        <i class="ri-sparkling-line"></i>
+                        Desarrollador Full Stack
+                    </span>
+                    
+                    <h1 class="hero-title">
+                        Hola, soy <br>
+                        <span class="gradient-text">Alejandro Martínez</span>
+                    </h1>
+                    
+                    <p class="hero-description">
+                        Creando experiencias digitales excepcionales con código limpio y diseño innovador. 
+                        Especializado en desarrollo web moderno y aplicaciones escalables.
                     </p>
-                    <div class="botones-container">
+
+                    <div class="hero-buttons">
                         <a href="#proyectos" class="btn btn-primary">
-                            <i class="fas fa-code"></i> Ver Proyectos
+                            Ver proyectos
+                            <i class="ri-arrow-down-line"></i>
                         </a>
-                        <a href="#contacto" class="btn btn-secondary">
-                            <i class="fas fa-envelope"></i> Contactar
-                        </a>
+                        <a href="#contacto" class="btn btn-secondary">Contactar</a>
                     </div>
-                    <div class="redes-sociales">
-                        <a href="https://github.com" class="red-social" target="_blank">
-                            <i class="fab fa-github"></i>
+
+                    <div class="hero-social">
+                        <a href="https://github.com" class="social-link" target="_blank">
+                            <i class="ri-github-fill"></i>
                         </a>
-                        <a href="https://linkedin.com" class="red-social" target="_blank">
-                            <i class="fab fa-linkedin"></i>
+                        <a href="https://linkedin.com" class="social-link" target="_blank">
+                            <i class="ri-linkedin-box-fill"></i>
                         </a>
-                        <a href="mailto:yhernandez@ejemplo.com" class="red-social">
-                            <i class="fas fa-envelope"></i>
+                        <a href="mailto:contacto@alejandromartinez.com" class="social-link">
+                            <i class="ri-mail-fill"></i>
                         </a>
                     </div>
                 </div>
-                <div class="inicio-imagen">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80" 
-                         alt="Foto de perfil" class="perfil-img">
+
+                <div class="hero-image">
+                    <div class="image-container">
+                        <div class="glow-effect"></div>
+                        <img src="https://images.unsplash.com/photo-1701463387028-3947648f1337?auto=format&fit=crop&w=800&q=80" 
+                             alt="Alejandro Martínez" class="profile-image">
+                        <div class="decorative-circle top-right"></div>
+                        <div class="decorative-circle bottom-left"></div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#sobre-mi" class="scroll-down">
+                <i class="ri-arrow-down-line"></i>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="sobre-mi">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Sobre <span class="gradient-text">mí</span></h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="about-content grid">
+                    <div class="about-text">
+                        <p class="about-paragraph">
+                            Soy un <span class="highlight">desarrollador Full Stack</span> apasionado por crear 
+                            soluciones digitales que marquen la diferencia. Con más de 5 años de experiencia, 
+                            he trabajado en proyectos que van desde startups innovadoras hasta grandes empresas 
+                            multinacionales.
+                        </p>
+                        
+                        <p class="about-paragraph">
+                            Mi enfoque se centra en entender las necesidades del usuario y transformarlas en 
+                            aplicaciones <span class="highlight">intuitivas y robustas</span>. Me encanta aprender 
+                            nuevas tecnologías, enfrentar desafíos complejos y convertir ideas en realidad.
+                        </p>
+                        
+                        <p class="about-paragraph">
+                            Cuando no estoy programando, disfruto contribuir a proyectos de código abierto, 
+                            escribir artículos técnicos, mentorizar a desarrolladores junior y mantenerme actualizado 
+                            con las últimas tendencias del desarrollo web.
+                        </p>
+
+                        <!-- Achievements -->
+                        <div class="achievements grid">
+                            <div class="achievement-card">
+                                <i class="ri-award-line"></i>
+                                <div class="achievement-value">8+</div>
+                                <div class="achievement-label">Certificaciones</div>
+                            </div>
+                            <div class="achievement-card">
+                                <i class="ri-cup-line"></i>
+                                <div class="achievement-value">∞</div>
+                                <div class="achievement-label">Tazas de café</div>
+                            </div>
+                            <div class="achievement-card">
+                                <i class="ri-star-line"></i>
+                                <div class="achievement-value">4.9</div>
+                                <div class="achievement-label">Rating promedio</div>
+                            </div>
+                            <div class="achievement-card">
+                                <i class="ri-trending-up-line"></i>
+                                <div class="achievement-value">+150%</div>
+                                <div class="achievement-label">Crecimiento</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <div class="stat-value" data-count="5">0</div>
+                            <div class="stat-title">Años de experiencia</div>
+                            <p class="stat-description">Desarrollando soluciones web innovadoras</p>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-value" data-count="50">0</div>
+                            <div class="stat-title">Proyectos completados</div>
+                            <p class="stat-description">Entregados con éxito y a tiempo</p>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-value" data-count="30">0</div>
+                            <div class="stat-title">Clientes satisfechos</div>
+                            <p class="stat-description">Relaciones duraderas y testimonios positivos</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Values -->
+                <div class="values grid">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="ri-code-line"></i>
+                        </div>
+                        <h3 class="value-title">Código limpio</h3>
+                        <p class="value-description">
+                            Escribo código mantenible y escalable siguiendo las mejores prácticas y estándares 
+                            de la industria
+                        </p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="ri-lightbulb-line"></i>
+                        </div>
+                        <h3 class="value-title">Innovación</h3>
+                        <p class="value-description">
+                            Siempre buscando nuevas tecnologías y soluciones creativas para resolver problemas 
+                            complejos
+                        </p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="ri-rocket-line"></i>
+                        </div>
+                        <h3 class="value-title">Rendimiento</h3>
+                        <p class="value-description">
+                            Optimización constante para experiencias rápidas, eficientes y con la mejor UX 
+                            posible
+                        </p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="ri-group-line"></i>
+                        </div>
+                        <h3 class="value-title">Colaboración</h3>
+                        <p class="value-description">
+                            Trabajo en equipo efectivo y comunicación clara en cada etapa del proyecto
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills section" id="habilidades">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Mis <span class="gradient-text">Habilidades</span></h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">
+                        Tecnologías y herramientas que domino para crear soluciones excepcionales
+                    </p>
+                </div>
+
+                <div class="skills-content grid">
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <div class="category-line"></div>
+                            <h3 class="category-title">Frontend & Mobile</h3>
+                        </div>
+                        
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">React / Next.js</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">React Native / Expo</span>
+                                    <span class="skill-percentage">92%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="92"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">TypeScript</span>
+                                    <span class="skill-percentage">92%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="92"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">TailwindCSS</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <div class="category-line"></div>
+                            <h3 class="category-title">Backend & Database</h3>
+                        </div>
+                        
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Node.js</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">MongoDB</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Firebase</span>
+                                    <span class="skill-percentage">88%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="88"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">SQLite / AsyncStorage</span>
+                                    <span class="skill-percentage">87%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="87"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <div class="category-line"></div>
+                            <h3 class="category-title">Bibliotecas & APIs</h3>
+                        </div>
+                        
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Redux</span>
+                                    <span class="skill-percentage">87%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="87"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Chart.js / Visualización</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Stripe / Pagos</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Maps API / Geolocalización</span>
+                                    <span class="skill-percentage">83%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="83"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <div class="category-line"></div>
+                            <h3 class="category-title">Herramientas & DevOps</h3>
+                        </div>
+                        
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Git / GitHub</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Figma / UI Design</span>
+                                    <span class="skill-percentage">88%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="88"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Vite / Webpack</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Testing & CI/CD</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tech Stack -->
+                <div class="tech-stack">
+                    <h3 class="tech-title">También trabajo con</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">GraphQL</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Redis</span>
+                        <span class="tech-tag">Webpack</span>
+                        <span class="tech-tag">Vite</span>
+                        <span class="tech-tag">Sass/SCSS</span>
+                        <span class="tech-tag">Jest</span>
+                        <span class="tech-tag">Cypress</span>
+                        <span class="tech-tag">Supabase</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">WebSockets</span>
+                        <span class="tech-tag">Three.js</span>
+                        <span class="tech-tag">D3.js</span>
+                        <span class="tech-tag">Stripe</span>
+                        <span class="tech-tag">OAuth</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects section" id="proyectos">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Mis <span class="gradient-text">Proyectos</span></h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">
+                        Algunos de los proyectos en los que he trabajado recientemente
+                    </p>
+                </div>
+
+                <!-- Project Filters -->
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="mobile">Móvil</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Fashion E-commerce Platform">
+                            <div class="project-date">
+                                <i class="ri-calendar-line"></i>
+                                <span>2024</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-content">
+                            <h3 class="project-title">Fashion E-commerce Platform</h3>
+                            <p class="project-description">
+                                Plataforma de comercio electrónico de moda elegante y sofisticada con catálogo 
+                                completo, filtros avanzados y sistema de pago seguro.
+                            </p>
+                            
+                            <div class="project-tags">
+                                <span class="project-tag">React</span>
+                                <span class="project-tag">Next.js</span>
+                                <span class="project-tag">Stripe</span>
+                                <span class="project-tag">TailwindCSS</span>
+                            </div>
+                            
+                            <div class="project-links">
+                                <a href="https://demo-fashion.example.com" class="project-link demo" target="_blank">
+                                    <i class="ri-external-link-line"></i>
+                                    Demo
+                                </a>
+                                <a href="https://github.com/username/fashion-ecommerce" class="project-link code" target="_blank">
+                                    <i class="ri-github-line"></i>
+                                    Código
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Travel Booking Website">
+                            <div class="project-date">
+                                <i class="ri-calendar-line"></i>
+                                <span>2024</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-content">
+                            <h3 class="project-title">Travel Booking Website</h3>
+                            <p class="project-description">
+                                Sitio web vibrante de reservas de viaje con sistema de búsqueda de alojamientos, 
+                                filtros por ubicación y proceso de reserva intuitivo.
+                            </p>
+                            
+                            <div class="project-tags">
+                                <span class="project-tag">React</span>
+                                <span class="project-tag">TypeScript</span>
+                                <span class="project-tag">Maps API</span>
+                                <span class="project-tag">Firebase</span>
+                            </div>
+                            
+                            <div class="project-links">
+                                <a href="https://demo-travel.example.com" class="project-link demo" target="_blank">
+                                    <i class="ri-external-link-line"></i>
+                                    Demo
+                                </a>
+                                <a href="https://github.com/username/travel-booking" class="project-link code" target="_blank">
+                                    <i class="ri-github-line"></i>
+                                    Código
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card" data-category="mobile">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Healthy Recipes Mobile App">
+                            <div class="project-date">
+                                <i class="ri-calendar-line"></i>
+                                <span>2024</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-content">
+                            <h3 class="project-title">Healthy Recipes Mobile App</h3>
+                            <p class="project-description">
+                                Aplicación móvil de recetas saludables con interfaz intuitiva, búsqueda avanzada, 
+                                favoritos y modo offline para consultar recetas en cualquier momento.
+                            </p>
+                            
+                            <div class="project-tags">
+                                <span class="project-tag">React Native</span>
+                                <span class="project-tag">Expo</span>
+                                <span class="project-tag">SQLite</span>
+                                <span class="project-tag">AsyncStorage</span>
+                            </div>
+                            
+                            <div class="project-links">
+                                <a href="https://figma.com/recipes-app-design" class="project-link demo" target="_blank">
+                                    <i class="ri-external-link-line"></i>
+                                    Demo
+                                </a>
+                                <a href="https://github.com/username/healthy-recipes-app" class="project-link code" target="_blank">
+                                    <i class="ri-github-line"></i>
+                                    Código
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="more-projects">
+                    <a href="https://github.com/username" class="btn btn-outline" target="_blank">
+                        <i class="ri-github-line"></i>
+                        Ver más proyectos en GitHub
+                        <i class="ri-external-link-line"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contacto">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"><span class="gradient-text">Contacto</span></h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">
+                        ¿Tienes un proyecto en mente? ¡Hablemos!
+                    </p>
+                </div>
+
+                <div class="contact-content grid">
+                    <!-- Contact Info -->
+                    <div class="contact-info">
+                        <h3 class="contact-info-title">Información de contacto</h3>
+                        <p class="contact-info-description">
+                            Estoy disponible para nuevos proyectos y colaboraciones. No dudes en contactarme 
+                            a través de cualquiera de estos medios. Respondo en menos de 24 horas.
+                        </p>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="ri-mail-line"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Email</h4>
+                                    <a href="mailto:contacto@alejandromartinez.com">contacto@alejandromartinez.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="ri-phone-line"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Teléfono</h4>
+                                    <a href="tel:+34123456789">+34 123 456 789</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="ri-map-pin-line"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Ubicación</h4>
+                                    <p>Madrid, España</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Links -->
+                        <div class="contact-social">
+                            <h4>Redes sociales</h4>
+                            <p>Sígueme en mis redes para estar al tanto de mis últimos proyectos</p>
+                            
+                            <div class="social-links">
+                                <a href="https://github.com" class="social-card" target="_blank">
+                                    <i class="ri-github-fill"></i>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="https://linkedin.com" class="social-card" target="_blank">
+                                    <i class="ri-linkedin-box-fill"></i>
+                                    <span>LinkedIn</span>
+                                </a>
+                                <a href="mailto:contacto@alejandromartinez.com" class="social-card">
+                                    <i class="ri-mail-fill"></i>
+                                    <span>Email</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Availability -->
+                        <div class="availability">
+                            <div class="availability-status">
+                                <div class="status-dot"></div>
+                                <span>Disponible para proyectos</span>
+                            </div>
+                            <p>Actualmente aceptando nuevos proyectos freelance y colaboraciones</p>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-container">
+                        <div class="contact-form-wrapper">
+                            <h3 class="contact-form-title">Envíame un mensaje</h3>
+                            
+                            <form id="contactForm" class="contact-form">
+                                <div class="form-group">
+                                    <label for="name">
+                                        Nombre <span class="required">*</span>
+                                    </label>
+                                    <input type="text" id="name" name="name" required placeholder="Tu nombre completo">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">
+                                        Email <span class="required">*</span>
+                                    </label>
+                                    <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="subject">
+                                        Asunto <span class="required">*</span>
+                                    </label>
+                                    <input type="text" id="subject" name="subject" required placeholder="¿De qué quieres hablar?">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message">
+                                        Mensaje <span class="required">*</span>
+                                    </label>
+                                    <textarea id="message" name="message" rows="5" required 
+                                              placeholder="Cuéntame sobre tu proyecto..."></textarea>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary submit-btn">
+                                    <i class="ri-send-plane-line"></i>
+                                    <span>Enviar mensaje</span>
+                                    <div class="spinner"></div>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">&lt;Portfolio /&gt;</div>
+                    <p class="footer-description">
+                        Desarrollador Full Stack dedicado a crear experiencias digitales excepcionales.
+                    </p>
+                    <div class="footer-heart">
+                        <span>Hecho con</span>
+                        <i class="ri-heart-fill"></i>
+                        <span>en España</span>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-title">Enlaces rápidos</h4>
+                    <ul class="footer-menu">
+                        <li><a href="#inicio" class="footer-link">Inicio</a></li>
+                        <li><a href="#sobre-mi" class="footer-link">Sobre mí</a></li>
+                        <li><a href="#habilidades" class="footer-link">Habilidades</a></li>
+                        <li><a href="#proyectos" class="footer-link">Proyectos</a></li>
+                        <li><a href="#contacto" class="footer-link">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4 class="footer-title">Contacto</h4>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <a href="mailto:contacto@alejandromartinez.com">contacto@alejandromartinez.com</a>
+                        </li>
+                        <li>
+                            <a href="tel:+34123456789">+34 123 456 789</a>
+                        </li>
+                        <li>Madrid, España</li>
+                    </ul>
+                    
+                    <div class="footer-status">
+                        <div class="status-dot"></div>
+                        <span>Disponible</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">
+                    © 2024 Alejandro Martínez. Todos los derechos reservados.
+                </p>
+                
+                <div class="footer-legal">
+                    <a href="#" class="legal-link">Privacidad</a>
+                    <a href="#" class="legal-link">Términos</a>
+                    <a href="#" class="legal-link">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <a href="#inicio" class="scroll-top" id="scroll-top">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!-- JavaScript Files -->
     <script src="js/header.js"></script>
     <script src="js/inicio.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
