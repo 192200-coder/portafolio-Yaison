@@ -1,60 +1,50 @@
-# Portafolio Personal - Yaison Hernández
+# Portafolio Profesional - Yaison H.
 
 ## Descripción
-Portafolio web personal desarrollado como proyecto de examen para demostrar dominio de Git, GitHub y desarrollo web.
+Este proyecto es un portafolio web profesional desarrollado como parte del examen de Ingeniería de Software. El sitio presenta una interfaz moderna, responsiva y optimizada, destacando habilidades técnicas y proyectos realizados.
 
 ## Tecnologías Utilizadas
-- **HTML5**: Estructura semántica.
-- **CSS3**: Flexbox, Grid y Responsive Design.
-- **JavaScript (ES6+)**: Interactividad y manipulación del DOM.
-- **Git & GitHub**: Control de versiones bajo metodología Gitflow.
-- **Font Awesome**: Iconografía profesional.
+* **HTML5:** Estructura semántica de la aplicación.
+* **CSS3:** Estilo modular utilizando Variables CSS (Custom Properties), Flexbox y Grid.
+* **JavaScript (Vanilla):** Lógica interactiva, menús responsivos y efectos de scroll.
+* **Remix Icon:** Set de iconos vectoriales para la interfaz.
+* **Git/GitHub:** Control de versiones siguiendo flujo de ramas.
 
 ## Estructura de Ramas
-El proyecto utiliza el siguiente flujo de trabajo:
+El proyecto sigue una metodología de ramificación organizada:
+* `master`: Versión estable y final del proyecto.
+* `develop`: Rama de integración donde se consolidan las funcionalidades.
+* `feature/YH-add-header`: Desarrollo independiente del menú y navegación.
+* `feature/YH-add-inicio`: Desarrollo de la sección de bienvenida y Hero.
+
+## Estructura del Proyecto
 ```text
-master
-└── develop
-    ├── feature/YH-add-header
-    └── feature/YH-add-inicio
-Funcionalidades Implementadas
-Header
-Menú de navegación con 4 enlaces.
-
-Diseño responsive con menú hamburguesa para móviles.
-
-Efectos hover y transiciones CSS.
-
-JavaScript para la funcionalidad del menú móvil.
-
-Sección Inicio
-Nombre completo y título profesional.
-
-Descripción de perfil profesional.
-
-Imagen de perfil / Avatar.
-
-Botones de llamada a la acción.
-
-Redes sociales con iconos de Font Awesome.
-
-Animaciones dinámicas con JavaScript.
-
+portafolio-Yaison/
+├── css/
+│   ├── style.css   (Estilos globales y variables)
+│   ├── header.css  (Estilos específicos de navegación)
+│   └── inicio.css  (Estilos de la sección Hero)
+├── js/
+│   ├── main.js     (Lógica global)
+│   ├── header.js   (Lógica de navegación)
+│   └── inicio.js   (Efectos de scroll)
+└── index.html      (Estructura principal)
 Instrucciones para Clonar y Ejecutar
-Clona el repositorio:
+Clone el repositorio:
 
 Bash
 
-git clone [https://github.com/192200-coder/portafolio-Yaison.git](https://github.com/192200-coder/portafolio-Yaison.git)
-Navega al directorio:
+git clone [https://github.com/tu-usuario/portafolio-Yaison.git](https://github.com/tu-usuario/portafolio-Yaison.git)
+Acceda a la carpeta:
 
 Bash
 
 cd portafolio-Yaison
-Ejecución: Abre el archivo index.html en tu navegador.
+Abra el archivo index.html en su navegador preferido.
 
-Autor
-Yaison Hernández - Estudiante de Ingeniería de Software
+Buenas Prácticas Aplicadas
+Commits atómicos con convenciones feat:, fix:, style:.
 
-Fecha de Entrega
-22 de Diciembre de 2025 EOF
+Separación de responsabilidades (Modularidad en CSS y JS).
+
+Diseño "Mobile First" y optimización de carga de imágenes. EOF
