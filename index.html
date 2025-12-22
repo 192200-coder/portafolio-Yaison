@@ -1,69 +1,16 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Yaison Hernández</title>
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/inicio.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
-    <header>
-        <nav class="nav-container">
-            <a href="#inicio" class="logo">Portfolio YH</a>
-            <button class="menu-toggle" aria-label="Menú">
-                <i class="fas fa-bars"></i>
-            </button>
-            <ul class="nav-menu">
-                <li><a href="#inicio"><i class="fas fa-home"></i> Inicio</a></li>
-                <li><a href="#sobre-mi"><i class="fas fa-user"></i> Sobre Mí</a></li>
-                <li><a href="#proyectos"><i class="fas fa-code"></i> Proyectos</a></li>
-                <li><a href="#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="inicio">
-            <div class="inicio-container">
-                <div class="inicio-content">
-                    <h1>Yaison Hernández</h1>
-                    <p class="titulo">Desarrollador Full Stack</p>
-                    <p class="descripcion">
-                        Apasionado por la tecnología y el desarrollo web. 
-                        Me especializo en crear soluciones digitales innovadoras 
-                        y eficientes que resuelven problemas reales.
-                    </p>
-                    <div class="botones-container">
-                        <a href="#proyectos" class="btn btn-primary">
-                            <i class="fas fa-code"></i> Ver Proyectos
-                        </a>
-                        <a href="#contacto" class="btn btn-secondary">
-                            <i class="fas fa-envelope"></i> Contactar
-                        </a>
-                    </div>
-                    <div class="redes-sociales">
-                        <a href="https://github.com" class="red-social" target="_blank">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://linkedin.com" class="red-social" target="_blank">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="mailto:yhernandez@ejemplo.com" class="red-social">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="inicio-imagen">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80" 
-                         alt="Foto de perfil" class="perfil-img">
-                </div>
+<section class="hero section" id="inicio">
+    <div class="hero-container container grid">
+        <div class="hero-content">
+            <span class="hero-badge"><i class="ri-sparkling-line"></i> Estudiante de Ingeniería</span>
+            <h1 class="hero-title">Hola, soy <br><span class="gradient-text">Yaison Hernández</span></h1>
+            <p class="hero-description">Desarrollador enfocado en soluciones modernas y eficientes.</p>
+            <div class="hero-buttons">
+                <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+                <a href="#contacto" class="btn btn-secondary">Contactar</a>
             </div>
-        </section>
-    </main>
-
-    <script src="js/header.js"></script>
-    <script src="js/inicio.js"></script>
-</body>
-</html>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1701463387028-3947648f1337" alt="Yaison" class="profile-image">
+        </div>
+    </div>
+</section>
