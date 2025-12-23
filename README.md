@@ -48,3 +48,11 @@ Commits atómicos con convenciones feat:, fix:, style:.
 Separación de responsabilidades (Modularidad en CSS y JS).
 
 Diseño "Mobile First" y optimización de carga de imágenes. EOF
+
+## Estado del Proyecto
+- [x] Header & Navegación
+- [x] Sección Inicio
+- [x] Sección Skills
+- [x] Sección Proyectos
+- [x] Formulario de Contacto
+- [x] Footer
